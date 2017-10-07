@@ -1,0 +1,50 @@
+{
+    "name": "dolphiq/newsletter",
+    "description": "Craft 3 plugin that provides an easy way to enable and manage a xml sitemap for search engines like Google",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "newsletter"
+    ],
+    "support": {
+        "docs": "https://github.com/Dolphiq/newsletter/blob/master/README.md",
+        "issues": "https://github.com/Dolphiq/newsletter/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dolphiq",
+            "homepage": "https://dolphiq.nl"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "~3.0.0-beta.23"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "dolphiq\\newsletter\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Newsletter",
+        "handle": "newsletter",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://raw.githubusercontent.com/Dolphiq/newsletter/master/CHANGELOG.md",
+        "components": {
+            "newsletterService": "dolphiq\\newsletter\\services\\NewsletterService"
+        },
+        "class": "dolphiq\\newsletter\\Newsletter"
+    }
+}

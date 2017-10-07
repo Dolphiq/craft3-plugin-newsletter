@@ -1,0 +1,23 @@
+{#
+/**
+ * Newsletter plugin for Craft CMS
+ *
+ * NewsletterUtility Utility Content
+ *
+ * @author    Dolphiq
+ * @copyright Copyright (c) 2017 Dolphiq
+ * @link      https://dolphiq.nl
+ * @package   Newsletter
+ * @since     1.0.0
+ */
+#}
+
+<h1>NewsletterUtility</h1>
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@dolphiq/newsletter/assetbundles/newsletterutilityutility/dist', true) ~ '/img/NewsletterUtility-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>Your Utility content goes here</p>
+
+<p>{{ someVar }}</p>

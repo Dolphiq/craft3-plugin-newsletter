@@ -1,0 +1,23 @@
+{#
+/**
+ * Newsletter plugin for Craft CMS 3.x
+ *
+ *  Field Input
+ *
+ * @author    Dolphiq
+ * @copyright Copyright (c) 2017 Dolphiq
+ * @link      https://dolphiq.nl
+ * @package   Newsletter
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

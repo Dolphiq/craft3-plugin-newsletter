@@ -1,0 +1,19 @@
+{#
+/**
+ * Newsletter plugin for Craft CMS
+ *
+ * NewsletterWidget Widget Body
+ *
+ * @author    Dolphiq
+ * @copyright Copyright (c) 2017 Dolphiq
+ * @link      https://dolphiq.nl
+ * @package   Newsletter
+ * @since     1.0.0
+ */
+#}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@dolphiq/newsletter/assetbundles/newsletterwidgetwidget/dist', true) ~ '/img/NewsletterWidget-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>{{ message }}</p>

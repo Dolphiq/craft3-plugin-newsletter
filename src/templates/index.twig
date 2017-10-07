@@ -1,0 +1,45 @@
+{#
+/**
+ * Newsletter plugin for Craft CMS 3.x
+ *
+ * Newsletter index.twig
+ *
+ * @author    Dolphiq
+ * @copyright Copyright (c) 2017 Dolphiq
+ * @link      https://dolphiq.nl
+ * @package   Newsletter
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("dolphiq\\newsletter\\assetbundles\\newsletter\\NewsletterAsset") %}
+{% do view.registerAssetBundle("dolphiq\\newsletter\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "https://github.com/Dolphiq/newsletter/blob/master/README.md" %}
+
+{# The title of this CP section #}
+{% set title = "Newsletter" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('newsletter') %}
+
+{# Get a URL to an image in our AssetBundle #}
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@dolphiq/newsletter/assetbundles/indexcpsection/dist', true) ~ '/img/Index-icon.svg' %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('newsletter') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "Index CP Section body goes here"|t('newsletter') }}</h2>
+    <img src="{{ iconUrl }}" height="64" width="64" />
+    <p class="textline"></p>
+{% endset %}
