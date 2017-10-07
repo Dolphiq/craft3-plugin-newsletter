@@ -1,8 +1,6 @@
 # Newsletter plugin for Craft CMS 3.x
 
-Craft 3 plugin that provides an easy way to enable and manage a xml sitemap for search engines like Google
-
-![Screenshot](resources/img/plugin-logo.png)
+Craft 3 plugin that provides an easy way to create and send newsletters to an email list
 
 ## Requirements
 
